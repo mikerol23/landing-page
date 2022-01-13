@@ -19,8 +19,7 @@ a:active {
   color: #e5e7eb;
   text-decoration: none;
 }
-.header,
-.footer {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -46,6 +45,7 @@ a:active {
   justify-content: space-between;
   background-color: #1f2937;
   padding: 70px 200px;
+  gap: 20px;
 }
 
 button {
@@ -65,6 +65,9 @@ button {
   max-width: 500px;
 }
 
+.hero.secondary {
+  padding: 10px 0px;
+}
 .hero.main {
   color: #f9faf8;
   font-size: 48px;
@@ -81,18 +84,26 @@ button {
 .content3 {
   background-color: #e5e7eb;
   display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 150px 250px;
 }
 .quote {
   font-size: 36px;
   font-style: italic;
   font-weight: 100px;
 }
+.attribution {
+  align-self: flex-end;
+  font-weight: bold;
+  font-size: 18px;
+}
 
 .content4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 70px 100px;
+  margin: 100px 200px;
 }
 .quasimodal {
   display: flex;
@@ -100,13 +111,15 @@ button {
   color: white;
   justify-content: space-between;
   align-items: center;
-  padding: 35px 180px;
+  padding: 35px 125px;
   gap: 80px;
   border-radius: 6px;
 }
-.quasimodal.left-items {
+.quasimodal .left-items {
   display: flex;
+  flex-direction: column;
 }
+
 .quasimodal-bold {
   font-size: 24px;
   font-weight: 900;
@@ -114,9 +127,22 @@ button {
 .quasimodal-text {
   font-size: 18px;
 }
+.quasimodal .right-items {
+  flex-shrink: 0;
+}
+
 .content4 .signup {
   border: 2px solid white;
   background-color: #3882f6;
   color: white;
+}
+.footer {
+  font-size: 18px;
+  color: #e5e7eb;
+  background-color: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
 }
 /*comment*/
